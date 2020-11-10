@@ -6,7 +6,12 @@ public class Main{
 
 		System.out.println("Am I here x3?");	
 
-		System.out.println("Fuck");
+		System.out.println(" ______ _    _  _____ _  __
+							|  ____| |  | |/ ____| |/ /
+							|__  | | |  | |      | ' / 
+							|  __| | |  | | |    |  <  
+							| |    | |__| | |____| . \ 
+							|_|     \____/ \_____|_|\_\");
 
 
 
