@@ -5,7 +5,7 @@ public class Main{
 		System.out.println("Not looking forward to coding a GUI");
 
 
-
+		System.out.println("Fuck");
 
 
 
