@@ -12,7 +12,7 @@ public class Main{
 							| |    | |__| | |____| . \ 
 							|_|     \____/ \_____|_|\_\");
 
-
+		System.out.println("JK Gary, I didn't mean that.");
 
 
 	}
