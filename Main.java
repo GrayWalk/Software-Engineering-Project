@@ -4,6 +4,12 @@ public class Main{
 		System.out.println("Taylor's a sexy mofo");
 		System.out.println("Not looking forward to coding a GUI");
 
-		System.out.println("Am I here x2?");	
+		System.out.println("Am I here x3?");	
+
+		System.out.println("Fuck");
+
+
+
+		
 	}
 }
