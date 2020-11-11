@@ -5,12 +5,7 @@ public class Main{
 		System.out.println("Not looking forward to coding a GUI");
 
 
-		System.out.println(" ______ _    _  _____ _  __
-							|  ____| |  | |/ ____| |/ /
-							|__  | | |  | |      | ' / 
-							|  __| | |  | | |    |  <  
-							| |    | |__| | |____| . \\ 
-							|_|     \\____/ \\_____|_|\\_\\");
+		System.out.println("Placeholder FUCK);
 
 		System.out.println("JK Gary, I didn't mean that.");
 
