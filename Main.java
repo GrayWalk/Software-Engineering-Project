@@ -1,14 +1,31 @@
-public class Main{
+import java.awt.event.*;
+import java.awt.*;
+import javax.swing.*;
+public class Main extends JFrame{
+	static JFrame f;
+
+	static JButton b, b1, b2;
+
+	static JLabel l;
+
 	public static void main(String[] args){
-		System.out.println("Grayson's a sexy mofo");
-		System.out.println("Taylor's a sexy mofo");
-		System.out.println("Not looking forward to coding a GUI");
+		f = new JFrame("Battleship");
+		l = new JLabel("Panel lable");
+		b = new JButton("New Game");
+		b1 = new JButton("AI Difficulty");
+		b2 = new JButton("How to Play");
 
+		JPanel p = new JPanel();
 
-		System.out.println("Placeholder FUCK");
+		p.add(b);
+		p.add(b1);
+		p.add(b2);
+		p.add(l);
 
-		System.out.println("JK Gary, I didn't mean that.");
+		p.setBackground(Color.blue);
 
-
+		f.add(p);
+		f.setSize(500, 300);
+		f.show();
 	}
 }
