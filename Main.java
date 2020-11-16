@@ -2,11 +2,6 @@ import java.awt.event.*;
 import java.awt.*;
 import javax.swing.*;
 
-import java.util.Scanner;
-import java.io.File;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-
 public class Main extends JFrame{
 	static JFrame f;
 
@@ -15,10 +10,6 @@ public class Main extends JFrame{
 	static JLabel l;
 
 	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
-		File Megalovania = new File("Megalovania.WAV");
-		playSound(Megalovania);
-
 		f = new JFrame("Battleship");
 		l = new JLabel("Panel lable");
 		b = new JButton("New Game");
