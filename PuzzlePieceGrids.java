@@ -2,12 +2,11 @@ import java.security.SecureRandom;
 public class PuzzlePieceGrids {
 
 	public static void main(String[] args) {
-		System.out.println("This program should test inserting a smaller grid into it's larger counterpart of a multiple of 3");
-
-		int [][] smallGrid = {{1,2,1},{1,2,1},{1,2,1}};
-		int [][] bigGrid = new int[9][9];
-		for(int i=0;i<9;i++)
-			gridInGrid(smallGrid,bigGrid);
+		int [][] bigGrid = new int[12][12];
+		for(int i=0;i<5;i++){
+			gridInGrid(IslandGen.createIsland(6),bigGrid);
+			
+		}
 		printGrid(bigGrid);
 		
 	}
@@ -15,6 +14,8 @@ public class PuzzlePieceGrids {
 	//Hopefully this should check and place the small array into the larger array.
 	public static int[][] gridInGrid(int[][]smallGrid, int[][]bigGrid)
 	{
+		printGrid(smallGrid);
+		System.out.println();
 		if(smallGrid.length==3 && smallGrid[0].length==3 && bigGrid.length %3==0 && bigGrid[0].length %3==0 && bigGrid.length==bigGrid[0].length)
 		{
 			//2d array to mark which sectors are filled/unfilled.
