@@ -56,6 +56,7 @@ class Battle{
 		c2 = new JPanel();
 		c2.setBackground(Color.gray);
 		b3 = new JButton("Back to Main Menu");
+		//Create 2 panels top containing 12x12 button array
 		//button listener and code to switch stuff
 			b3.addActionListener(new ActionListener(){
 				public void actionPerformed(ActionEvent arg0){
