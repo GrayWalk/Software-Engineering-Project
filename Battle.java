@@ -28,8 +28,6 @@ class Battle{
 			b.addActionListener(new ActionListener(){
 				public void actionPerformed(ActionEvent arg0){
 					switchLayout("c2");
-					Map.initializeImages();
-					Map.randomizeMap();
 				}
 			});
 		b1 = new JButton("Settings");
@@ -54,7 +52,20 @@ class Battle{
 
 		//Card 2, Start a game section
 		c2 = new JPanel();
+		BoxLayout box = new BoxLayout(c2, BoxLayout.Y_AXIS);
+		c2.setLayout(box);
+		c2.setBorder(new EmptyBorder(new Insets(200, 400, 200, 200)));
 		c2.setBackground(Color.gray);
+		b6 = new JButton("Place Map");
+		//button listener and code to switch stuff
+			b6.addActionListener(new ActionListener(){
+				public void actionPerformed(ActionEvent arg0){
+					Map.initializeImages();
+					Map.randomizeMap();
+				}
+			});
+
+		//l3 = new JLabel(new ImageIcon(Map.images[1][1]));
 		b3 = new JButton("Back to Main Menu");
 		//button listener and code to switch stuff
 			b3.addActionListener(new ActionListener(){
@@ -63,12 +74,14 @@ class Battle{
 				}
 			});
 
+		c2.add(b6);
+		//c2.add(l3);
 		c2.add(b3);
 
 		//Card 3, Settings section
 		c3 = new JPanel();
-		BoxLayout box = new BoxLayout(c3, BoxLayout.Y_AXIS);
-		c3.setLayout(box);
+		BoxLayout box2 = new BoxLayout(c3, BoxLayout.Y_AXIS);
+		c3.setLayout(box2);
 		c3.setBorder(new EmptyBorder(new Insets(200, 400, 200, 200)));
 		c3.setBackground(Color.gray);
 		JLabel settingsLabel = new JLabel("These buttons are to change the size of the overall grid, the default is 7 x 7");
