@@ -1,5 +1,5 @@
 import java.security.SecureRandom;
-public class AI {
+public class Ai {
 	//this was a lot easier to do in my head...
 	public static void AIAttack(int[][]grid)
 	{
