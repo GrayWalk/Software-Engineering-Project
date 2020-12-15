@@ -3,6 +3,8 @@ import java.awt.*;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
+//import sun.net.www.content.text.plain;
+
 class Battle{
 	JFrame f;
 	
@@ -19,6 +21,8 @@ class Battle{
 	JButton k1, k2, k3, k4, k5, k6, k7, k8, k9, k10, k11, k12;
 	JButton l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12;
 
+	JLabel m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12;
+
 	JButton newGameB, settingsB, howPlayB, back1B, back2B, back3B;
 	JRadioButton r1, r2, r3;
 	JLabel mainL, howPlayL, creditsL;
@@ -30,7 +34,8 @@ class Battle{
 	Battle(){
 		//basic frame details
 		JFrame f = new JFrame("Battleship");
-		f.setSize(1000, 750);
+		f.setSize(800, 1000);
+		f.setResizable(false);
 
 		//Card 1, Main menu
 		card1 = new JPanel();
@@ -70,6 +75,20 @@ class Battle{
 		card2.setBackground(Color.gray);
 		back1B = new JButton("Back to Main Menu");
 		Icon oceanTile = new ImageIcon("ocean.png");
+		Icon islandTile = new ImageIcon("island.png");
+
+		m1 = new JLabel(oceanTile);
+		m2 = new JLabel(oceanTile);
+		m3 = new JLabel(oceanTile);
+		m4 = new JLabel(oceanTile);
+		m5 = new JLabel(oceanTile);
+		m6 = new JLabel(oceanTile);
+		m7 = new JLabel(oceanTile);
+		m8 = new JLabel(oceanTile);
+		m9 = new JLabel(oceanTile);
+		m10 = new JLabel(oceanTile);
+		m11 = new JLabel(oceanTile);
+		m12 = new JLabel(oceanTile);
 
 		a1 = new JButton(oceanTile);
 		a2 = new JButton(oceanTile);
@@ -228,11 +247,743 @@ class Battle{
 		l12 = new JButton(oceanTile);
 	
 		//button listener and code to switch stuff
-			back1B.addActionListener(new ActionListener(){
-				public void actionPerformed(ActionEvent arg0){
-					switchLayout("card1");
-				}
-			});
+		back1B.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				switchLayout("card1");
+			}
+		});
+//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+		a1.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				a1.setIcon(islandTile);
+			}
+		});
+		a2.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				a2.setIcon(islandTile);
+			}
+		});
+		a3.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				a3.setIcon(islandTile);
+			}
+		});
+		a4.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				a4.setIcon(islandTile);
+			}
+		});
+		a5.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				a5.setIcon(islandTile);
+			}
+		});
+		a6.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				a6.setIcon(islandTile);
+			}
+		});
+		a7.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				a7.setIcon(islandTile);
+			}
+		});
+		a8.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				a8.setIcon(islandTile);
+			}
+		});
+		a9.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				a9.setIcon(islandTile);
+			}
+		});
+		a10.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				a10.setIcon(islandTile);
+			}
+		});
+		a11.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				a11.setIcon(islandTile);
+			}
+		});
+		a12.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				a12.setIcon(islandTile);
+			}
+		});
+//BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+		b1.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				b1.setIcon(islandTile);
+			}
+		});
+		b2.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				b2.setIcon(islandTile);
+			}
+		});
+		b3.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				b3.setIcon(islandTile);
+			}
+		});
+		b4.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				b4.setIcon(islandTile);
+			}
+		});
+		b5.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				b5.setIcon(islandTile);
+			}
+		});
+		b6.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				b6.setIcon(islandTile);
+			}
+		});
+		b7.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				b7.setIcon(islandTile);
+			}
+		});
+		b8.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				b8.setIcon(islandTile);
+			}
+		});
+		b9.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				b9.setIcon(islandTile);
+			}
+		});
+		b10.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				b10.setIcon(islandTile);
+			}
+		});
+		b11.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				b11.setIcon(islandTile);
+			}
+		});
+		b12.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				b12.setIcon(islandTile);
+			}
+		});
+//CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+		c1.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				c1.setIcon(islandTile);
+			}
+		});
+		c2.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				c2.setIcon(islandTile);
+			}
+		});
+		c3.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				c3.setIcon(islandTile);
+			}
+		});
+		c4.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				c4.setIcon(islandTile);
+			}
+		});
+		c5.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				c5.setIcon(islandTile);
+			}
+		});
+		c6.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				c6.setIcon(islandTile);
+			}
+		});
+		c7.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				c7.setIcon(islandTile);
+			}
+		});
+		c8.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				c8.setIcon(islandTile);
+			}
+		});
+		c9.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				c9.setIcon(islandTile);
+			}
+		});
+		c10.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				c10.setIcon(islandTile);
+			}
+		});
+		c11.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				c11.setIcon(islandTile);
+			}
+		});
+		c12.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				c12.setIcon(islandTile);
+			}
+		});
+//DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+		d1.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				d1.setIcon(islandTile);
+			}
+		});
+		d2.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				d2.setIcon(islandTile);
+			}
+		});
+		d3.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				d3.setIcon(islandTile);
+			}
+		});
+		d4.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				d4.setIcon(islandTile);
+			}
+		});
+		d5.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				d5.setIcon(islandTile);
+			}
+		});
+		d6.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				d6.setIcon(islandTile);
+			}
+		});
+		d7.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				d7.setIcon(islandTile);
+			}
+		});
+		d8.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				d8.setIcon(islandTile);
+			}
+		});
+		d9.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				d9.setIcon(islandTile);
+			}
+		});
+		d10.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				d10.setIcon(islandTile);
+			}
+		});
+		d11.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				d11.setIcon(islandTile);
+			}
+		});
+		d12.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				d12.setIcon(islandTile);
+			}
+		});
+//EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+		e1.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				e1.setIcon(islandTile);
+			}
+		});
+		e2.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				e2.setIcon(islandTile);
+			}
+		});
+		e3.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				e3.setIcon(islandTile);
+			}
+		});
+		e4.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				e4.setIcon(islandTile);
+			}
+		});
+		e5.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				e5.setIcon(islandTile);
+			}
+		});
+		e6.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				e6.setIcon(islandTile);
+			}
+		});
+		e7.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				e7.setIcon(islandTile);
+			}
+		});
+		e8.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				e8.setIcon(islandTile);
+			}
+		});
+		e9.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				e9.setIcon(islandTile);
+			}
+		});
+		e10.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				e10.setIcon(islandTile);
+			}
+		});
+		e11.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				e11.setIcon(islandTile);
+			}
+		});
+		e12.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				e12.setIcon(islandTile);
+			}
+		});
+//FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+		f1.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				f1.setIcon(islandTile);
+			}
+		});
+		f2.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				f2.setIcon(islandTile);
+			}
+		});
+		f3.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				f3.setIcon(islandTile);
+			}
+		});
+		f4.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				f4.setIcon(islandTile);
+			}
+		});
+		f5.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				f5.setIcon(islandTile);
+			}
+		});
+		f6.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				f6.setIcon(islandTile);
+			}
+		});
+		f7.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				f7.setIcon(islandTile);
+			}
+		});
+		f8.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				f8.setIcon(islandTile);
+			}
+		});
+		f9.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				f9.setIcon(islandTile);
+			}
+		});
+		f10.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				f10.setIcon(islandTile);
+			}
+		});
+		f11.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				f11.setIcon(islandTile);
+			}
+		});
+		f12.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				f12.setIcon(islandTile);
+			}
+		});
+//GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+		g1.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				g1.setIcon(islandTile);
+			}
+		});
+		g2.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				g2.setIcon(islandTile);
+			}
+		});
+		g3.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				g3.setIcon(islandTile);
+			}
+		});
+		g4.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				g4.setIcon(islandTile);
+			}
+		});
+		g5.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				g5.setIcon(islandTile);
+			}
+		});
+		g6.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				g6.setIcon(islandTile);
+			}
+		});
+		g7.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				g7.setIcon(islandTile);
+			}
+		});
+		g8.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				g8.setIcon(islandTile);
+			}
+		});
+		g9.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				g9.setIcon(islandTile);
+			}
+		});
+		g10.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				g10.setIcon(islandTile);
+			}
+		});
+		g11.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				g11.setIcon(islandTile);
+			}
+		});
+		g12.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				g12.setIcon(islandTile);
+			}
+		});
+//HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+		h1.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				h1.setIcon(islandTile);
+			}
+		});
+		h2.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				h2.setIcon(islandTile);
+			}
+		});
+		h3.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				h3.setIcon(islandTile);
+			}
+		});
+		h4.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				h4.setIcon(islandTile);
+			}
+		});
+		h5.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				h5.setIcon(islandTile);
+			}
+		});
+		h6.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				h6.setIcon(islandTile);
+			}
+		});
+		h7.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				h7.setIcon(islandTile);
+			}
+		});
+		h8.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				h8.setIcon(islandTile);
+			}
+		});
+		h9.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				h9.setIcon(islandTile);
+			}
+		});
+		h10.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				h10.setIcon(islandTile);
+			}
+		});
+		h11.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				h11.setIcon(islandTile);
+			}
+		});
+		h12.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				h12.setIcon(islandTile);
+			}
+		});
+//IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+		i1.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				i1.setIcon(islandTile);
+			}
+		});
+		i2.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				i2.setIcon(islandTile);
+			}
+		});
+		i3.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				i3.setIcon(islandTile);
+			}
+		});
+		i4.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				i4.setIcon(islandTile);
+			}
+		});
+		i5.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				i5.setIcon(islandTile);
+			}
+		});
+		i6.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				i6.setIcon(islandTile);
+			}
+		});
+		i7.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				i7.setIcon(islandTile);
+			}
+		});
+		i8.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				i8.setIcon(islandTile);
+			}
+		});
+		i9.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				i9.setIcon(islandTile);
+			}
+		});
+		i10.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				i10.setIcon(islandTile);
+			}
+		});
+		i11.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				i11.setIcon(islandTile);
+			}
+		});
+		i12.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				i12.setIcon(islandTile);
+			}
+		});
+//JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
+		j1.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				j1.setIcon(islandTile);
+			}
+		});
+		j2.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				j2.setIcon(islandTile);
+			}
+		});
+		j3.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				j3.setIcon(islandTile);
+			}
+		});
+		j4.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				j4.setIcon(islandTile);
+			}
+		});
+		j5.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				j5.setIcon(islandTile);
+			}
+		});
+		j6.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				j6.setIcon(islandTile);
+			}
+		});
+		j7.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				j7.setIcon(islandTile);
+			}
+		});
+		j8.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				j8.setIcon(islandTile);
+			}
+		});
+		j9.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				j9.setIcon(islandTile);
+			}
+		});
+		j10.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				j10.setIcon(islandTile);
+			}
+		});
+		j11.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				j11.setIcon(islandTile);
+			}
+		});
+		j12.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				j12.setIcon(islandTile);
+			}
+		});
+//KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+		k1.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				k1.setIcon(islandTile);
+			}
+		});
+		k2.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				k2.setIcon(islandTile);
+			}
+		});
+		k3.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				k3.setIcon(islandTile);
+			}
+		});
+		k4.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				k4.setIcon(islandTile);
+			}
+		});
+		k5.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				k5.setIcon(islandTile);
+			}
+		});
+		k6.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				k6.setIcon(islandTile);
+			}
+		});
+		k7.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				k7.setIcon(islandTile);
+			}
+		});
+		k8.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				k8.setIcon(islandTile);
+			}
+		});
+		k9.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				k9.setIcon(islandTile);
+			}
+		});
+		k10.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				k10.setIcon(islandTile);
+			}
+		});
+		k11.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				k11.setIcon(islandTile);
+			}
+		});
+		k12.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				k12.setIcon(islandTile);
+			}
+		});
+//LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		l1.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				l1.setIcon(islandTile);
+			}
+		});
+		l2.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				l2.setIcon(islandTile);
+			}
+		});
+		l3.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				l3.setIcon(islandTile);
+			}
+		});
+		l4.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				l4.setIcon(islandTile);
+			}
+		});
+		l5.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				l5.setIcon(islandTile);
+			}
+		});
+		l6.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				l6.setIcon(islandTile);
+			}
+		});
+		l7.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				l7.setIcon(islandTile);
+			}
+		});
+		l8.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				l8.setIcon(islandTile);
+			}
+		});
+		l9.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				l9.setIcon(islandTile);
+			}
+		});
+		l10.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				l10.setIcon(islandTile);
+			}
+		});
+		l11.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				l11.setIcon(islandTile);
+			}
+		});
+		l12.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				l12.setIcon(islandTile);
+			}
+		});
 
 		card2.add(a1);
 		card2.add(a2);
@@ -390,7 +1141,21 @@ class Battle{
 		card2.add(l11);
 		card2.add(l12);
 
-		card2.add(back1B);
+		card2.add(m1);
+		card2.add(m2);
+		card2.add(m3);
+		card2.add(m4);
+		card2.add(m5);
+		card2.add(m6);
+		card2.add(m7);
+		card2.add(m8);
+		card2.add(m9);
+		card2.add(m10);
+		card2.add(m11);
+		card2.add(m12);
+
+		//card2.add(back1B);
+		card2.setLayout(new GridLayout(13,12));
 
 		//Card 3, Settings section
 		card3 = new JPanel();
