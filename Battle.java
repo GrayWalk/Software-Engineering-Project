@@ -1511,9 +1511,9 @@ class Battle{
 			});
 
 		card3.add(settingsLabel);
-		card3.add(r1);
-		card3.add(r2);
-		card3.add(r3);
+		card3.add(radio1);
+		card3.add(radio2);
+		card3.add(radio3);
 		card3.add(back2B);
 		
 
