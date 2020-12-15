@@ -77,6 +77,7 @@ class Battle{
 		Icon oceanTile = new ImageIcon("ocean.png");
 		Icon islandTile = new ImageIcon("island.png");
 
+//Creation of Labels, need to change how the Tiles are assigned.
 		m1 = new JLabel(oceanTile);
 		m2 = new JLabel(oceanTile);
 		m3 = new JLabel(oceanTile);
@@ -90,6 +91,7 @@ class Battle{
 		m11 = new JLabel(oceanTile);
 		m12 = new JLabel(oceanTile);
 
+//Creation of Buttons
 		a1 = new JButton(oceanTile);
 		a2 = new JButton(oceanTile);
 		a3 = new JButton(oceanTile);
@@ -252,7 +254,7 @@ class Battle{
 				switchLayout("card1");
 			}
 		});
-//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+//A Listeners
 		a1.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0){
 				a1.setIcon(islandTile);
@@ -313,7 +315,7 @@ class Battle{
 				a12.setIcon(islandTile);
 			}
 		});
-//BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+//B Listeners
 		b1.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0){
 				b1.setIcon(islandTile);
@@ -374,7 +376,7 @@ class Battle{
 				b12.setIcon(islandTile);
 			}
 		});
-//CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+//C Listeners
 		c1.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0){
 				c1.setIcon(islandTile);
@@ -435,7 +437,7 @@ class Battle{
 				c12.setIcon(islandTile);
 			}
 		});
-//DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+//D Listeners
 		d1.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0){
 				d1.setIcon(islandTile);
@@ -496,7 +498,7 @@ class Battle{
 				d12.setIcon(islandTile);
 			}
 		});
-//EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+//E Listeners
 		e1.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0){
 				e1.setIcon(islandTile);
@@ -557,7 +559,7 @@ class Battle{
 				e12.setIcon(islandTile);
 			}
 		});
-//FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+//F Listeners
 		f1.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0){
 				f1.setIcon(islandTile);
@@ -618,7 +620,7 @@ class Battle{
 				f12.setIcon(islandTile);
 			}
 		});
-//GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+//G Listeners
 		g1.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0){
 				g1.setIcon(islandTile);
@@ -679,7 +681,7 @@ class Battle{
 				g12.setIcon(islandTile);
 			}
 		});
-//HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+//H Listeners
 		h1.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0){
 				h1.setIcon(islandTile);
@@ -740,7 +742,7 @@ class Battle{
 				h12.setIcon(islandTile);
 			}
 		});
-//IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+//I Listeners
 		i1.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0){
 				i1.setIcon(islandTile);
@@ -801,7 +803,7 @@ class Battle{
 				i12.setIcon(islandTile);
 			}
 		});
-//JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
+//J Listeners
 		j1.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0){
 				j1.setIcon(islandTile);
@@ -862,7 +864,7 @@ class Battle{
 				j12.setIcon(islandTile);
 			}
 		});
-//KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+//K Listeners
 		k1.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0){
 				k1.setIcon(islandTile);
@@ -923,7 +925,7 @@ class Battle{
 				k12.setIcon(islandTile);
 			}
 		});
-//LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+//L Listeners
 		l1.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0){
 				l1.setIcon(islandTile);
@@ -985,6 +987,7 @@ class Battle{
 			}
 		});
 
+//Adds the buttons at the top
 		card2.add(a1);
 		card2.add(a2);
 		card2.add(a3);
@@ -1141,6 +1144,7 @@ class Battle{
 		card2.add(l11);
 		card2.add(l12);
 
+//These add the label tiles to the bottom of the jframe
 		card2.add(m1);
 		card2.add(m2);
 		card2.add(m3);
@@ -1155,6 +1159,7 @@ class Battle{
 		card2.add(m12);
 
 		//card2.add(back1B);
+		//grid layout height by width
 		card2.setLayout(new GridLayout(13,12));
 
 		//Card 3, Settings section
