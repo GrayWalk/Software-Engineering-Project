@@ -3,9 +3,13 @@ import java.awt.*;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
+//import jdk.internal.jshell.tool.resources.version;
+
 //import sun.net.www.content.text.plain;
 
 class Battle{
+	protected static Icon islandTile;
+
 	JFrame f;
 	
 	JButton a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12;
@@ -28,6 +32,11 @@ class Battle{
 	JLabel q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12;
 	JLabel r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12;
 	JLabel s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12;
+	JLabel t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12;
+	JLabel u1, u2, u3, u4, u5, u6, u7, u8, u9, u10, u11, u12;
+	JLabel v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12;
+	JLabel w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12;
+	JLabel x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12;
 
 	JButton newGameB, settingsB, howPlayB, back1B, back2B, back3B;
 	JRadioButton radio1, radio2, radio3;
@@ -38,9 +47,16 @@ class Battle{
 	JPanel cardPanel = new JPanel(new CardLayout());
 
 	Battle(){
+
+		int [][] bigGrid = new int[12][12];
+		for(int i=0;i<5;i++){
+			PuzzlePieceGrids.gridInGrid(IslandGen.createIsland(6),bigGrid);
+			
+		}
+
 		//basic frame details
 		JFrame f = new JFrame("Battleship");
-		f.setSize(800, 1000);
+		f.setSize(400, 800);
 		f.setResizable(false);
 
 		//Card 1, Main menu
@@ -80,8 +96,8 @@ class Battle{
 		card2 = new JPanel();
 		card2.setBackground(Color.gray);
 		back1B = new JButton("Back to Main Menu");
-		Icon oceanTile = new ImageIcon("ocean.png");
-		Icon islandTile = new ImageIcon("island.png");
+		final Icon oceanTile = new ImageIcon("ocean.png");
+		final Icon islandTile = new ImageIcon("island.png");
 
 //Creation of Labels, need to change how the Tiles are assigned.
 		m1 = new JLabel(oceanTile);
@@ -96,6 +112,152 @@ class Battle{
 		m10 = new JLabel(oceanTile);
 		m11 = new JLabel(oceanTile);
 		m12 = new JLabel(oceanTile);
+
+		n1 = new JLabel(oceanTile);
+		n2 = new JLabel(oceanTile);
+		n3 = new JLabel(oceanTile);
+		n4 = new JLabel(oceanTile);
+		n5 = new JLabel(oceanTile);
+		n6 = new JLabel(oceanTile);
+		n7 = new JLabel(oceanTile);
+		n8 = new JLabel(oceanTile);
+		n9 = new JLabel(oceanTile);
+		n10 = new JLabel(oceanTile);
+		n11 = new JLabel(oceanTile);
+		n12 = new JLabel(oceanTile);
+
+		o1 = new JLabel(oceanTile);
+		o2 = new JLabel(oceanTile);
+		o3 = new JLabel(oceanTile);
+		o4 = new JLabel(oceanTile);
+		o5 = new JLabel(oceanTile);
+		o6 = new JLabel(oceanTile);
+		o7 = new JLabel(oceanTile);
+		o8 = new JLabel(oceanTile);
+		o9 = new JLabel(oceanTile);
+		o10 = new JLabel(oceanTile);
+		o11 = new JLabel(oceanTile);
+		o12 = new JLabel(oceanTile);
+
+		p1 = new JLabel(oceanTile);
+		p2 = new JLabel(oceanTile);
+		p3 = new JLabel(oceanTile);
+		p4 = new JLabel(oceanTile);
+		p5 = new JLabel(oceanTile);
+		p6 = new JLabel(oceanTile);
+		p7 = new JLabel(oceanTile);
+		p8 = new JLabel(oceanTile);
+		p9 = new JLabel(oceanTile);
+		p10 = new JLabel(oceanTile);
+		p11 = new JLabel(oceanTile);
+		p12 = new JLabel(oceanTile);
+
+		q1 = new JLabel(oceanTile);
+		q2 = new JLabel(oceanTile);
+		q3 = new JLabel(oceanTile);
+		q4 = new JLabel(oceanTile);
+		q5 = new JLabel(oceanTile);
+		q6 = new JLabel(oceanTile);
+		q7 = new JLabel(oceanTile);
+		q8 = new JLabel(oceanTile);
+		q9 = new JLabel(oceanTile);
+		q10 = new JLabel(oceanTile);
+		q11 = new JLabel(oceanTile);
+		q12 = new JLabel(oceanTile);
+
+		r1 = new JLabel(oceanTile);
+		r2 = new JLabel(oceanTile);
+		r3 = new JLabel(oceanTile);
+		r4 = new JLabel(oceanTile);
+		r5 = new JLabel(oceanTile);
+		r6 = new JLabel(oceanTile);
+		r7 = new JLabel(oceanTile);
+		r8 = new JLabel(oceanTile);
+		r9 = new JLabel(oceanTile);
+		r10 = new JLabel(oceanTile);
+		r11 = new JLabel(oceanTile);
+		r12 = new JLabel(oceanTile);
+
+		s1 = new JLabel(oceanTile);
+		s2 = new JLabel(oceanTile);
+		s3 = new JLabel(oceanTile);
+		s4 = new JLabel(oceanTile);
+		s5 = new JLabel(oceanTile);
+		s6 = new JLabel(oceanTile);
+		s7 = new JLabel(oceanTile);
+		s8 = new JLabel(oceanTile);
+		s9 = new JLabel(oceanTile);
+		s10 = new JLabel(oceanTile);
+		s11 = new JLabel(oceanTile);
+		s12 = new JLabel(oceanTile);
+
+		t1 = new JLabel(oceanTile);
+		t2 = new JLabel(oceanTile);
+		t3 = new JLabel(oceanTile);
+		t4 = new JLabel(oceanTile);
+		t5 = new JLabel(oceanTile);
+		t6 = new JLabel(oceanTile);
+		t7 = new JLabel(oceanTile);
+		t8 = new JLabel(oceanTile);
+		t9 = new JLabel(oceanTile);
+		t10 = new JLabel(oceanTile);
+		t11 = new JLabel(oceanTile);
+		t12 = new JLabel(oceanTile);
+
+		u1 = new JLabel(oceanTile);
+		u2 = new JLabel(oceanTile);
+		u3 = new JLabel(oceanTile);
+		u4 = new JLabel(oceanTile);
+		u5 = new JLabel(oceanTile);
+		u6 = new JLabel(oceanTile);
+		u7 = new JLabel(oceanTile);
+		u8 = new JLabel(oceanTile);
+		u9 = new JLabel(oceanTile);
+		u10 = new JLabel(oceanTile);
+		u11 = new JLabel(oceanTile);
+		u12 = new JLabel(oceanTile);
+
+		v1 = new JLabel(oceanTile);
+		v2 = new JLabel(oceanTile);
+		v3 = new JLabel(oceanTile);
+		v4 = new JLabel(oceanTile);
+		v5 = new JLabel(oceanTile);
+		v6 = new JLabel(oceanTile);
+		v7 = new JLabel(oceanTile);
+		v8 = new JLabel(oceanTile);
+		v9 = new JLabel(oceanTile);
+		v10 = new JLabel(oceanTile);
+		v11 = new JLabel(oceanTile);
+		v12 = new JLabel(oceanTile);
+
+		w1 = new JLabel(oceanTile);
+		w2 = new JLabel(oceanTile);
+		w3 = new JLabel(oceanTile);
+		w4 = new JLabel(oceanTile);
+		w5 = new JLabel(oceanTile);
+		w6 = new JLabel(oceanTile);
+		w7 = new JLabel(oceanTile);
+		w8 = new JLabel(oceanTile);
+		w9 = new JLabel(oceanTile);
+		w10 = new JLabel(oceanTile);
+		w11 = new JLabel(oceanTile);
+		w12 = new JLabel(oceanTile);
+
+		x1 = new JLabel(oceanTile);
+		x2 = new JLabel(oceanTile);
+		x3 = new JLabel(oceanTile);
+		x4 = new JLabel(oceanTile);
+		x5 = new JLabel(oceanTile);
+		x6 = new JLabel(oceanTile);
+		x7 = new JLabel(oceanTile);
+		x8 = new JLabel(oceanTile);
+		x9 = new JLabel(oceanTile);
+		x10 = new JLabel(oceanTile);
+		x11 = new JLabel(oceanTile);
+		x12 = new JLabel(oceanTile);
+
+		JLabel[] labelArray = new JLabel[]{m1,m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,o1,o2,o3,o4,o5,o6,o7,o8,o9,o10,o11,o12,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,u1,u2,u3,u4,u5,u6,u7,u8,u9,u10,u11,u12,v1,v2,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,w1,w2,w3,w4,w5,w6,w7,w8,w9,w10,w11,w12,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12};
+
 
 //Creation of Buttons
 		a1 = new JButton(oceanTile);
@@ -1164,9 +1326,152 @@ class Battle{
 		card2.add(m11);
 		card2.add(m12);
 
+		card2.add(n1);
+		card2.add(n2);
+		card2.add(n3);
+		card2.add(n4);
+		card2.add(n5);
+		card2.add(n6);
+		card2.add(n7);
+		card2.add(n8);
+		card2.add(n9);
+		card2.add(n10);
+		card2.add(n11);
+		card2.add(n12);
+
+		card2.add(o1);
+		card2.add(o2);
+		card2.add(o3);
+		card2.add(o4);
+		card2.add(o5);
+		card2.add(o6);
+		card2.add(o7);
+		card2.add(o8);
+		card2.add(o9);
+		card2.add(o10);
+		card2.add(o11);
+		card2.add(o12);
+
+		card2.add(p1);
+		card2.add(p2);
+		card2.add(p3);
+		card2.add(p4);
+		card2.add(p5);
+		card2.add(p6);
+		card2.add(p7);
+		card2.add(p8);
+		card2.add(p9);
+		card2.add(p10);
+		card2.add(p11);
+		card2.add(p12);
+
+		card2.add(q1);
+		card2.add(q2);
+		card2.add(q3);
+		card2.add(q4);
+		card2.add(q5);
+		card2.add(q6);
+		card2.add(q7);
+		card2.add(q8);
+		card2.add(q9);
+		card2.add(q10);
+		card2.add(q11);
+		card2.add(q12);
+
+		card2.add(r1);
+		card2.add(r2);
+		card2.add(r3);
+		card2.add(r4);
+		card2.add(r5);
+		card2.add(r6);
+		card2.add(r7);
+		card2.add(r8);
+		card2.add(r9);
+		card2.add(r10);
+		card2.add(r11);
+		card2.add(r12);
+
+		card2.add(s1);
+		card2.add(s2);
+		card2.add(s3);
+		card2.add(s4);
+		card2.add(s5);
+		card2.add(s6);
+		card2.add(s7);
+		card2.add(s8);
+		card2.add(s9);
+		card2.add(s10);
+		card2.add(s11);
+		card2.add(s12);
+
+		card2.add(t1);
+		card2.add(t2);
+		card2.add(t3);
+		card2.add(t4);
+		card2.add(t5);
+		card2.add(t6);
+		card2.add(t7);
+		card2.add(t8);
+		card2.add(t9);
+		card2.add(t10);
+		card2.add(t11);
+		card2.add(t12);
+
+		card2.add(u1);
+		card2.add(u2);
+		card2.add(u3);
+		card2.add(u4);
+		card2.add(u5);
+		card2.add(u6);
+		card2.add(u7);
+		card2.add(u8);
+		card2.add(u9);
+		card2.add(u10);
+		card2.add(u11);
+		card2.add(u12);
+
+		card2.add(v1);
+		card2.add(v2);
+		card2.add(v3);
+		card2.add(v4);
+		card2.add(v5);
+		card2.add(v6);
+		card2.add(v7);
+		card2.add(v8);
+		card2.add(v9);
+		card2.add(v10);
+		card2.add(v11);
+		card2.add(v12);
+
+		card2.add(w1);
+		card2.add(w2);
+		card2.add(w3);
+		card2.add(w4);
+		card2.add(w5);
+		card2.add(w6);
+		card2.add(w7);
+		card2.add(w8);
+		card2.add(w9);
+		card2.add(w10);
+		card2.add(w11);
+		card2.add(w12);
+
+		card2.add(x1);
+		card2.add(x2);
+		card2.add(x3);
+		card2.add(x4);
+		card2.add(x5);
+		card2.add(x6);
+		card2.add(x7);
+		card2.add(x8);
+		card2.add(x9);
+		card2.add(x10);
+		card2.add(x11);
+		card2.add(x12);
+
 		//card2.add(back1B);
 		//grid layout height by width
-		card2.setLayout(new GridLayout(13,12));
+		card2.setLayout(new GridLayout(24,12));
 
 		//Card 3, Settings section
 		card3 = new JPanel();
@@ -1240,10 +1545,22 @@ class Battle{
 		cardPanel.add(card3, "card3");
 		cardPanel.add(card4, "card4");
 
+		int temp = 0;
+		for(int i=0; i<12; i++){
+			for(int j=0; j<12; j++){
+				temp++;
+				if(bigGrid[i][j] == 2){
+					labelArray[temp].setIcon(islandTile);
+				}
+			}
+		}
+
 
 		//add main panel to the screen frame
 		f.add(cardPanel);
 		f.setVisible(true);
+
+
 
 	}
 
@@ -1252,8 +1569,22 @@ class Battle{
 		c.show(cardPanel, newLayout);
 	}
 
+	/*
+	public static void labelFill(int[][] bigGrid,Icon islandTile, JLabel[] labelArray){
+		int temp = 0;
+		for(int i=0; i<12; i++){
+			for(int j=0; j<12; j++){
+				temp++;
+				if(bigGrid[i][j] == 2){
+					labelArray[temp].setIcon(islandTile);
+				}
+			}
+		}
+	}
+	*/
 	public static void main(String[] args){
-		
+		//PuzzlePieceGrids.printGrid(bigGrid);
+
 		SwingUtilities.invokeLater(new Runnable(){
 		public void run(){
 			new Battle();

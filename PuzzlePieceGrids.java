@@ -1,6 +1,7 @@
 import java.security.SecureRandom;
 public class PuzzlePieceGrids {
 
+	/*
 	public static void main(String[] args) {
 		int [][] bigGrid = new int[12][12];
 		for(int i=0;i<5;i++){
@@ -10,6 +11,7 @@ public class PuzzlePieceGrids {
 		printGrid(bigGrid);
 		
 	}
+	*/
 	
 	//Hopefully this should check and place the small array into the larger array.
 	public static int[][] gridInGrid(int[][]smallGrid, int[][]bigGrid)
