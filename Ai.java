@@ -1,7 +1,7 @@
 /* AI Class for SE 2450 Project
     Created by: Christopher Newton
     12/5/2020
-*/
+
 
 
 
@@ -38,3 +38,4 @@ public class AI{
 
 
 }
+*/
