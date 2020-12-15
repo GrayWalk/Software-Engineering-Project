@@ -22,9 +22,15 @@ class Battle{
 	JButton l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12;
 
 	JLabel m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12;
+	JLabel n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12;
+	JLabel o1, o2, o3, o4, o5, o6, o7, o8, o9, o10, o11, o12;
+	JLabel p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12;
+	JLabel q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12;
+	JLabel r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12;
+	JLabel s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12;
 
 	JButton newGameB, settingsB, howPlayB, back1B, back2B, back3B;
-	JRadioButton r1, r2, r3;
+	JRadioButton radio1, radio2, radio3;
 	JLabel mainL, howPlayL, creditsL;
 
 	JPanel card1, card2, card3, card4;
@@ -1169,22 +1175,22 @@ class Battle{
 		card3.setBorder(new EmptyBorder(new Insets(200, 400, 200, 200)));
 		card3.setBackground(Color.gray);
 		JLabel settingsLabel = new JLabel("These buttons are to change the size of the overall grid, the default is 7 x 7");
-		r1 = new JRadioButton("10 x 10 grid");
-		r1.addActionListener(new ActionListener(){
+		radio1 = new JRadioButton("10 x 10 grid");
+		radio1.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0){
 				Map.row = 10;
 				Map.column = 10;
 			}
 		});
-		r2 = new JRadioButton("15 x 15 grid");
-		r2.addActionListener(new ActionListener(){
+		radio2 = new JRadioButton("15 x 15 grid");
+		radio2.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0){
 				Map.row = 15;
 				Map.column = 15;	
 			}
 		});
-		r3 = new JRadioButton("20 x 20 grid");
-		r3.addActionListener(new ActionListener(){
+		radio3 = new JRadioButton("20 x 20 grid");
+		radio3.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0){
 				Map.row = 20;
 				Map.column = 20;
