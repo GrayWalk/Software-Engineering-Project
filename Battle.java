@@ -1480,7 +1480,7 @@ class Battle{
 		card3.setBorder(new EmptyBorder(new Insets(200, 400, 200, 200)));
 		card3.setBackground(Color.gray);
 		JLabel settingsLabel = new JLabel("These buttons are to change the size of the overall grid, the default is 7 x 7");
-		radio1 = new JRadioButton("10 x 10 grid");
+		radio1 = new JRadioButton("12 x 12 grid");
 		radio1.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0){
 				Map.row = 10;
@@ -1494,7 +1494,7 @@ class Battle{
 				Map.column = 15;	
 			}
 		});
-		radio3 = new JRadioButton("20 x 20 grid");
+		radio3 = new JRadioButton("9 x 9 grid");
 		radio3.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0){
 				Map.row = 20;
